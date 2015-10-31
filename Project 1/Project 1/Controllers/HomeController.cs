@@ -12,7 +12,10 @@ namespace Project_1.Controllers
         {
             return View();
         }
-
+        public ActionResult Missions()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
