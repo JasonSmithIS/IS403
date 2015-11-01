@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = ViewBag.name + "MissionFAQ";
+    ViewBag.Title = ViewBag.name + " Mission FAQs";
 }
 <ol class="breadcrumb">
     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -7,13 +7,13 @@
     <li class="active">@ViewBag.name</li>
 </ol>
 <h2>@ViewBag.Title.</h2>
-<div class="col-md-8">
+<div class="col-md-3">
     <a href='@Url.Action("MissionFAQ", "Home", new { name = @ViewBag.name })' class="thumbnail">
         <p>@ViewBag.name</p>
         <img src="@ViewBag.image" alt="@ViewBag.name" style="width:150px;height:150px">
     </a>
 </div>
-<div class="col-md-4">
+<div class="col-md-9">
     <p>Mission President: @ViewBag.MisPres</p>
     <p>Mission address:</p>
     <address>
@@ -40,11 +40,13 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="panel-title">
-                        Q.5
+                        Am I going to Baptize a lot?
                     </div>
                 </div>
                 <div class="panel-body">
-                    A
+                    That really depends on a lot of factors, including the Lord's plan for you, and his children in your areas. 
+                    Your preparation will help you be intune with the spirit so that you will know what to say 
+                    and know how to help others prepare to receive the gospel.
                     <input type="text" class="form-control" placeholder="Type your response here"><br />
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
@@ -52,11 +54,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="panel-title">
-                        Q1
+                        What will the tempurature be like?
                     </div>
                 </div>
                 <div class="panel-body">
-                    A
+                    That depends on the area that you are assigned to, but in general it will be hot in the summer, and cold in the winter.
                     <input type="text" class="form-control" placeholder="Type your response here"><br />
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
@@ -64,11 +66,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="panel-title">
-                        Q2
+                        Will I like the food?
                     </div>
                 </div>
                 <div class="panel-body">
-                    A
+                    I'm sure that you'll love at least half of what you cook yourself,
+                    and if you're lucky enough to get fed you might like about half of that too.
                     <input type="text" class="form-control" placeholder="Type your response here"><br />
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
@@ -76,11 +79,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="panel-title">
-                        Q3
+                        Will I come home ready to get married?
                     </div>
                 </div>
                 <div class="panel-body">
-                    A
+                    Everyone will want you to, and they will tell you all the time. 
+                    You will definitely want to get married even just to shut them up, and if you date you will eventually.
                     <input type="text" class="form-control" placeholder="Type your response here"><br />
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
