@@ -10,4 +10,9 @@
 
 </ol>
 <h2>@ViewBag.Title.</h2>
-<p>Use this area to provide additional information.</p>
+<div class="col-md-8">
+    <a href='@Url.Action("MissionFAQ", "Home", new { name = @ViewBag.name })' class="thumbnail">
+        <p>@ViewBag.name</p>
+        <img src="@ViewBag.image" alt="@ViewBag.name" style="width:150px;height:150px">
+    </a>
+</div>

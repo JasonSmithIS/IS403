@@ -16,8 +16,35 @@ namespace Project_1.Controllers
         {
             return View();
         }
-        public ActionResult MissionFAQ()
+        public ActionResult MissionFAQ(string name)
         {
+            ViewBag.name = name;
+            ViewBag.image = "../Content/Images/" + name + ".jpg";
+
+            if (name == "Florida")
+            {
+                ViewBag.MisPres = "Mark D. Cusick";
+                ViewBag.MisAdd = "";
+                ViewBag.Lang = "English, Spanish, Haitian Creole";
+                ViewBag.Clim = "Temperate";
+                ViewBag.Rel = "Baptist";
+            }
+            if (name == "Tokyo")
+            {
+                ViewBag.MisPres = "";
+                ViewBag.MisAdd = "";
+                ViewBag.Lang = "";
+                ViewBag.Clim = "";
+                ViewBag.Rel = "";
+            }
+            if (name == "Paris")
+            {
+                ViewBag.MisPres = "";
+                ViewBag.MisAdd = "";
+                ViewBag.Lang = "";
+                ViewBag.Clim = "";
+                ViewBag.Rel = "";
+            }
             return View();
         }
         public ActionResult About()
