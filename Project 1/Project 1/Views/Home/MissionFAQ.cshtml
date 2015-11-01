@@ -2,9 +2,6 @@
     ViewBag.Title = "MissionFAQ";
 }
 <ol class="breadcrumb">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Library</a></li>
-    <li class="active">Data</li>
     <li>@Html.ActionLink("Home", "Index", "Home")</li>
     <li class="active">@Html.ActionLink("Missions", "Missions", "Home")</li>
 
@@ -15,4 +12,11 @@
         <p>@ViewBag.name</p>
         <img src="@ViewBag.image" alt="@ViewBag.name" style="width:150px;height:150px">
     </a>
+</div>
+<div class="col-md-4">
+    <p>@ViewBag.MisPres</p>
+    <p>@ViewBag.MisAdd</p>
+    <p>@ViewBag.Lang</p>
+    <p>@ViewBag.Clim</p>
+    <p>@ViewBag.Rel</p>
 </div>

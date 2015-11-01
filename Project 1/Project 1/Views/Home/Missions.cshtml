@@ -2,9 +2,6 @@
     ViewBag.Title = "Missions";
 }
 <ol class="breadcrumb">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Library</a></li>
-    <li class="active">Data</li>
     <li>@Html.ActionLink("Home", "Index", "Home")</li>
     <li class="active">@Html.ActionLink("Missions", "Missions", "Home")</li>
     
@@ -16,19 +13,19 @@
     <div class="col-md-4">
         <a href='@Url.Action("MissionFAQ", "Home", new { name = "Florida" })' class="thumbnail">
             <p>Florida</p>
-            <img src="../Content/Images/Florida.jpg" alt="Florida" style="width:150px;height:150px">
+            <img src="../Content/Images/Florida.png" alt="Florida" style="width:150px;height:150px">
         </a>
     </div>
     <div class="col-md-4">
         <a href='@Url.Action("MissionFAQ", "Home", new { name = "Tokyo" })' class="thumbnail">
             <p>Tokyo</p>
-            <img src="~/Content/Images/Trombone.png" alt="Trombone" style="width:150px;height:150px">
+            <img src="~/Content/Images/Tokyo.png" alt="Tokyo" style="width:150px;height:150px">
         </a>
     </div>
     <div class="col-md-4">
         <a href='@Url.Action("MissionFAQ", "Home", new { name = "Paris" })' class="thumbnail">
             <p>Paris</p>
-            <img src="~/Content/Images/Tuba.png" alt="Tuba" style="width:150px;height:150px">
+            <img src="~/Content/Images/Paris.png" alt="Tuba" style="width:150px;height:150px">
         </a>
     </div>
 </div>
