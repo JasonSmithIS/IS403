@@ -5,13 +5,30 @@
 <h3>@ViewBag.Message</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
+    <!--Contact Address-->
+    2005 N 900 E<br />
+    Provo, UT 84606<br />
     <abbr title="Phone">P:</abbr>
-    425.555.0100
+    801.422.0420
 </address>
 
 <address>
+    <!--Contact Email-->
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </address>
+<div class="row">
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name"><br />
+            <input type="text" class="form-control" placeholder="email"><br />
+            <select class="form-control" id="sel1">
+                <option>Update Mission Information</option>
+                <option>Add new mission</option>
+                <option>Volunteer to help</option>
+                <option>Other</option>
+            </select>
+            <textarea class="form-control" placeholder="Enter your message text here."></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
