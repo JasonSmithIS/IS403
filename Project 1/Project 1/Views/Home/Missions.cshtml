@@ -3,16 +3,18 @@
 @{
     ViewBag.Title = "Missions";
 }
+<!--Navigational Breadcrumb-->
 <ol class="breadcrumb">
     <li>@Html.ActionLink("Home", "Index", "Home")</li>
     <li class="active">@Html.ActionLink("Missions", "Missions", "Home")</li>
     
 </ol>
+
 <h2>@ViewBag.Title.</h2>
 <p>Please click on the dropdown to select the mission that you would like to read more information about.</p>
 
 <div class="row">
-    <!-- Single button -->
+    <!-- Dropdown Mission Selector button -->
     <div class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Select a Mission <span class="caret"></span>
@@ -24,6 +26,7 @@
         </ul>
     </div>
 </div><br />
+@*Image Carousel*@
 <div id="carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
