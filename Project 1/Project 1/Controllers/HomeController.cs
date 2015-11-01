@@ -24,7 +24,8 @@ namespace Project_1.Controllers
             if (name == "Florida")
             {
                 ViewBag.MisPres = "Mark D. Cusick";
-                ViewBag.MisAdd = "";
+                ViewBag.MisStAdd = "2005 N 900 E";
+                ViewBag.MisAdd = "Provo, UT 84606";
                 ViewBag.Lang = "English 82.1%, Spanish 10.7%, other Indo-European 3.8%, Asian and Pacific island 2.7%, other 0.7% (2000 census) ";
                 ViewBag.Clim = "mostly temperate, but tropical in some regions";
                 ViewBag.Rel = "Protestant 51.3%, Roman Catholic 23.9%, Mormon 1.7%, other Christian 1.6%, Jewish 1.7%, Buddhist 0.7%, Muslim 0.6%, other or unspecified 2.5%, unaffiliated 12.1%, none 4% (2007 est.) ";

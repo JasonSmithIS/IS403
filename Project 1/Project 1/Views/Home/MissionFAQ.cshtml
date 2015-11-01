@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "MissionFAQ";
+    ViewBag.Title = ViewBag.name + "MissionFAQ";
 }
 <ol class="breadcrumb">
     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -14,8 +14,12 @@
     </a>
 </div>
 <div class="col-md-4">
-    <p>@ViewBag.MisPres</p>
-    <p>@ViewBag.MisAdd</p>
+    <p>Mission President: @ViewBag.MisPres</p>
+    <p>Mission address:</p>
+    <address>
+        @ViewBag.MisStAdd<br />
+        @ViewBag.MisAdd
+    </address>
     <p>@ViewBag.Lang</p>
     <p>@ViewBag.Clim</p>
     <p>@ViewBag.Rel</p>

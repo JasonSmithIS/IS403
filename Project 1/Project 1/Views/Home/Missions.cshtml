@@ -7,9 +7,9 @@
     
 </ol>
 <h2>@ViewBag.Title.</h2>
-<p>Please click on the photo of the Mission Flag that you would like to read more information.</p>
+<p>Please click on the dropdown to select the mission that you would like to read more information about.</p>
 
-<div class="row">
+@*<div class="row">
     <div class="col-md-4">
         <a href='@Url.Action("MissionFAQ", "Home", new { name = "Florida" })' class="thumbnail">
             <p>Florida</p>
@@ -27,5 +27,18 @@
             <p>Paris</p>
             <img src="~/Content/Images/Paris.png" alt="Tuba" style="width:150px;height:150px">
         </a>
+    </div>
+</div>*@
+<div class="row">
+    <!-- Single button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mission <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Florida" })'>Florida</a></li>
+            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Tokyo" })'>Tokyo</a></li>
+            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Paris" })'>Paris</a></li>
+        </ul>
     </div>
 </div>
