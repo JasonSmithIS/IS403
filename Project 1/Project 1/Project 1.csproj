@@ -120,9 +120,23 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\dr-congo-missionaries-learning-class-1320689-tablet.jpg" />
+    <Content Include="Content\Images\dr-congo-missionaries-teaching-learning-1321417-tablet.jpg" />
+    <Content Include="Content\Images\elders-at-missionary-training-center-708272-tablet.jpg" />
     <Content Include="Content\Images\Florida.jpg" />
     <Content Include="Content\Images\Florida.png" />
+    <Content Include="Content\Images\lds-couple-missionaries-laughing-922374-tablet.jpg" />
+    <Content Include="Content\Images\lds-missionaries-teaching-family-fiji-267064-tablet.jpg" />
+    <Content Include="Content\Images\mormon-missionaries-looking-at-map-708273-tablet.jpg" />
+    <Content Include="Content\Images\mormon-missionaries-service-1178937-tablet.jpg" />
     <Content Include="Content\Images\Paris.png" />
+    <Content Include="Content\Images\philippines-sister-missionaries-praying-teaching-ridin-1361329-tablet.jpg" />
+    <Content Include="Content\Images\romania-missionaries-adults-classroom-talking-1312424-tablet.jpg" />
+    <Content Include="Content\Images\romania-missionaries-classroom-1311940-tablet.jpg" />
+    <Content Include="Content\Images\romania-missionaries-teaching-man-1312483-tablet.jpg" />
+    <Content Include="Content\Images\romania-missionaries-teaching-man-1312487-tablet.jpg" />
+    <Content Include="Content\Images\romania-sister-missionaries-walking-praying-teaching-1407530-tablet.jpg" />
+    <Content Include="Content\Images\sister-missionaries-africa-1135543-tablet.jpg" />
     <Content Include="Content\Images\Tokyo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

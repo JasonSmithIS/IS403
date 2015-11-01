@@ -1,8 +1,10 @@
-﻿<!DOCTYPE html>
+﻿<!--Jason Smith IS403 Fall 2015-->
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @*Here I diplay the page title from the viewbag*@ 
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -16,10 +18,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                @*This is the name of the company, which serves as a global home button*@
                 @Html.ActionLink("Mission FAQs", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    @*These are the links across the top, the format is "displayed text", "view name", "Controller Name"*@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Missions", "Missions", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
@@ -28,6 +32,7 @@
             </div>
         </div>
     </div>
+    @*This starts the body*@
     <div class="container body-content">
         @RenderBody()
         <hr />

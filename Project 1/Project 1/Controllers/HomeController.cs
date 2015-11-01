@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Jason Smith IS403 Fall 2015
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,19 +9,25 @@ namespace Project_1.Controllers
 {
     public class HomeController : Controller
     {
+        //This returns the home page
         public ActionResult Index()
         {
             return View();
         }
+        //This takes you to the main missions page where you can select a mission
         public ActionResult Missions()
         {
             return View();
         }
+        //This page is where the mission information is displayed, the mission name is passed in.
         public ActionResult MissionFAQ(string name)
         {
+            //I add the name to the viewbag to use later on the page
             ViewBag.name = name;
+            //Here I add the file path to the mission flag
             ViewBag.image = "../Content/Images/" + name + ".png";
 
+            //Here I set the values for each mission
             if (name == "Florida")
             {
                 ViewBag.MisPres = "Mark D. Cusick";
@@ -50,13 +57,14 @@ namespace Project_1.Controllers
             }
             return View();
         }
+        //This takes you to the about page
         public ActionResult About()
         {
             ViewBag.Message = "Mission FAQs description page.";
 
             return View();
         }
-
+        //This takes you to the Contact page
         public ActionResult Contact()
         {
             ViewBag.Message = "Mission FAQs contact page.";
