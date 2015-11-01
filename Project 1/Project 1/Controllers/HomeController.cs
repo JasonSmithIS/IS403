@@ -16,16 +16,20 @@ namespace Project_1.Controllers
         {
             return View();
         }
+        public ActionResult MissionFAQ()
+        {
+            return View();
+        }
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "application description page.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "contact page.";
 
             return View();
         }

@@ -1,8 +1,14 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Missions";
 }
+<ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li class="active">@Html.ActionLink("Missions", "Missions", "Home")</li>
+    
+</ol>
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
 <p>Use this area to provide additional information.</p>
 
