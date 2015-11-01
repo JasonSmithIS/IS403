@@ -8,6 +8,22 @@
     <li class="active">@Html.ActionLink("Missions", "Missions", "Home")</li>
     
 </ol>
+<h2>@ViewBag.Title.</h2>
+<p>Please click on the dropdown to select the mission that you would like to read more information about.</p>
+
+<div class="row">
+    <!-- Single button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select a Mission <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Florida" })'>Florida</a></li>
+            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Tokyo" })'>Tokyo</a></li>
+            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Paris" })'>Paris</a></li>
+        </ul>
+    </div>
+</div><br />
 <div id="carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -27,25 +43,25 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="~/Content/Images/" alt="Class" >
+            <img src="~/Content/Images/dr-congo-missionaries-learning-class-1320689-tablet.jpg" alt="Class" >
         </div>
         <div class="item">
-            <img src="~/Content/Images/" alt="Elders">
+            <img src="~/Content/Images/dr-congo-missionaries-teaching-learning-1321417-tablet.jpg" alt="English Class">
         </div>
         <div class="item">
             <img src="~/Content/Images/elders-at-missionary-training-center-708272-tablet.jpg" alt="Elders">
         </div>
         <div class="item">
-            <img src="~/Content/Images/" alt="Friends">
+            <img src="~/Content/Images/lds-couple-missionaries-laughing-922374-tablet.jpg" alt="Couple">
         </div>
         <div class="item">
             <img src="~/Content/Images/lds-missionaries-teaching-family-fiji-267064-tablet.jpg" alt="Fiji">
         </div>
         <div class="item">
-            <img src="~/Content/Images/" alt="Couple">
+            <img src="~/Content/Images/philippines-sister-missionaries-praying-teaching-ridin-1361329-tablet.jpg" alt="philippines">
         </div>
         <div class="item">
-            <img src="~/Content/Images/" alt="Missionary Work">
+            <img src="~/Content/Images/romania-missionaries-adults-classroom-talking-1312424-tablet.jpg" alt="English Class">
         </div>
         <div class="item">
             <img src="~/Content/Images/mormon-missionaries-looking-at-map-708273-tablet.jpg" alt="MTC Map">
@@ -54,7 +70,7 @@
             <img src="~/Content/Images/mormon-missionaries-service-1178937-tablet.jpg" alt="Service">
         </div>
         <div class="item">
-            <img src="~/Content/Images/" alt="Sister">
+            <img src="~/Content/Images/romania-missionaries-classroom-1311940-tablet.jpg" alt="Sister">
         </div>
         <div class="item">
             <img src="~/Content/Images/romania-sister-missionaries-walking-praying-teaching-1407530-tablet.jpg" alt="Romania">
@@ -72,20 +88,4 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
-<h2>@ViewBag.Title.</h2>
-<p>Please click on the dropdown to select the mission that you would like to read more information about.</p>
-
-<div class="row">
-    <!-- Single button -->
-    <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select a Mission <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Florida" })'>Florida</a></li>
-            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Tokyo" })'>Tokyo</a></li>
-            <li><a href='@Url.Action("MissionFAQ", "Home", new { name = "Paris" })'>Paris</a></li>
-        </ul>
-    </div>
 </div>
