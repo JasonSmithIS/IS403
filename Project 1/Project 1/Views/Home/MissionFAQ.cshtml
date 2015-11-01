@@ -28,70 +28,86 @@
 </div><br />
 <div class="row">
     <div class="col-md-12">
-        <div class="panel-group">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="panel-title">
                         Hidden
                     </div>
                 </div>
-                <div class="panel-body">
-                    Hidden
+                    <div class="panel-body">
+                        Hidden
+                    </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <div class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Am I going to Baptize a lot?
+                        </a>
+                    </div>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        That really depends on a lot of factors, including the Lord's plan for you, and his children in your areas.
+                        Your preparation will help you be intune with the spirit so that you will know what to say
+                        and know how to help others prepare to receive the gospel.
+                        <input type="text" class="form-control" placeholder="Type your response here"><br />
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading" role="tab" id="headingTwo">
                     <div class="panel-title">
-                        Am I going to Baptize a lot?
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What will the tempurature be like?
+                        </a>
                     </div>
                 </div>
-                <div class="panel-body">
-                    That really depends on a lot of factors, including the Lord's plan for you, and his children in your areas. 
-                    Your preparation will help you be intune with the spirit so that you will know what to say 
-                    and know how to help others prepare to receive the gospel.
-                    <input type="text" class="form-control" placeholder="Type your response here"><br />
-                    <button type="submit" class="btn btn-default">Submit</button>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        That depends on the area that you are assigned to, but in general it will be hot in the summer, and cold in the winter.
+                        <input type="text" class="form-control" placeholder="Type your response here"><br />
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading" role="tab" id="headingThree">
                     <div class="panel-title">
-                        What will the tempurature be like?
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Will I like the food?
+                        </a>
                     </div>
                 </div>
-                <div class="panel-body">
-                    That depends on the area that you are assigned to, but in general it will be hot in the summer, and cold in the winter.
-                    <input type="text" class="form-control" placeholder="Type your response here"><br />
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            I'm sure that you'll love at least half of what you cook yourself,
+                            and if you're lucky enough to get fed you might like about half of that too.
+                            <input type="text" class="form-control" placeholder="Type your response here"><br />
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading" role="tab" id="headingFour">
                     <div class="panel-title">
-                        Will I like the food?
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Will I come home ready to get married?
+                        </a>
                     </div>
                 </div>
-                <div class="panel-body">
-                    I'm sure that you'll love at least half of what you cook yourself,
-                    and if you're lucky enough to get fed you might like about half of that too.
-                    <input type="text" class="form-control" placeholder="Type your response here"><br />
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="panel-title">
-                        Will I come home ready to get married?
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            Everyone will want you to, and they will tell you all the time.
+                            You will definitely want to get married even just to shut them up, and if you date you will eventually.
+                            <input type="text" class="form-control" placeholder="Type your response here"><br />
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
                     </div>
                 </div>
-                <div class="panel-body">
-                    Everyone will want you to, and they will tell you all the time. 
-                    You will definitely want to get married even just to shut them up, and if you date you will eventually.
-                    <input type="text" class="form-control" placeholder="Type your response here"><br />
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-            </div>
-        </div>
+        </div><br />
         <p>Do you have an additonal question. Type your question below.</p>
         <input type="text" class="form-control" placeholder="Type your question here"><br />
         <button type="submit" class="btn btn-default">Submit</button>
