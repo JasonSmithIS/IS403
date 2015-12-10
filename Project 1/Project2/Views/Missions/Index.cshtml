@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Project2.Models.Missions>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionPFName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionPLName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionAddress1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionAddress2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionZip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionLanguage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionClimate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionReligion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionFlag)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionPFName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionPLName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionAddress1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionAddress2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionZip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionLanguage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionClimate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionReligion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionFlag)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MissionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MissionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MissionId })
+        </td>
+    </tr>
+}
+
+</table>

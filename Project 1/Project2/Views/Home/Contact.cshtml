@@ -1,0 +1,58 @@
+﻿<!--Jason Smith IS403 Fall 2015-->
+<!--This is where I store the page title to be displayed in the layout-->
+@{
+    ViewBag.Title = "Contact";
+}
+<ol class="breadcrumb">
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li class="active">@Html.ActionLink("Contact", "Contact", "Home")</li>
+</ol>
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    <!--Contact Address-->
+    2005 N 900 E<br />
+    Provo, UT 84606<br />
+    <abbr title="Phone">P:</abbr>
+    801.422.0420
+</address>
+
+<address>
+    <!--Contact Email-->
+    <strong>Email:</strong>   <p>Suggestions@MissionFAQs.com</p><br />
+</address>
+<div class="row">
+    <form>
+        <div class="form-group">
+            <h4>Send us your feedback.</h4>
+            <input type="text" class="form-control" placeholder="Name"><br />
+            <input type="text" class="form-control" placeholder="email"><br />
+            <select class="form-control" id="sel1">
+                <option>Select a Subject</option>
+                <option>Update Mission Information</option>
+                <option>Add new mission</option>
+                <option>Volunteer to help</option>
+                <option>Other</option>
+            </select>
+            <textarea class="form-control" placeholder="Enter your message text here."></textarea>
+            <input type="submit" class="btn btn-primary" value="Submit" onclick="clearFileInput" />
+        </div>
+    </form>
+</div>
+
+<script>
+    function clearFileInput() {
+        var oldInput = document.getElementById("fileInput");
+
+        var newInput = document.createElement("input");
+
+        newInput.type = "file";
+        newInput.id = oldInput.id;
+        newInput.name = oldInput.name;
+        newInput.className = oldInput.className;
+        newInput.style.cssText = oldInput.style.cssText;
+
+        oldInput.parentNode.replaceChild(newInput, oldInput);
+    }
+</script>

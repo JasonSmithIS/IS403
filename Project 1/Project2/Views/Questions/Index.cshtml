@@ -1,0 +1,150 @@
+﻿@model IEnumerable<Project2.Models.Questions>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div>
+    <h4>Mission info</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <p>Mission Name:</p>
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionName
+        </dd>
+
+        <dt>
+            Mission President:
+        </dt>
+
+        <dd>
+            @(ViewBag.mission.MissionPFName + " " +ViewBag.mission.MissionPLName)
+        </dd>
+
+        <dt>
+            Address 1:
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionAddress1
+        </dd>
+
+        <dt>
+            Address 2:
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionAddress2
+        </dd>
+
+        <dt>
+            City:
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionCity
+        </dd>
+
+        <dt>
+            State:
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionState
+        </dd>
+
+        <dt>
+            Zip:
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionZip
+        </dd>
+
+        <dt>
+            Language:
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionLanguage
+        </dd>
+
+        <dt>
+            Climate:
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionClimate
+        </dd>
+
+        <dt>
+            Religion:
+        </dt>
+
+        <dd>
+            @ViewBag.mission.MissionReligion
+        </dd>
+
+        <dt>
+            Flag:
+        </dt>
+
+        <dd>
+            <img src="@ViewBag.mission.MissionFlag" alt="@ViewBag.mission.MissionName" /> 
+        </dd>
+
+    </dl>
+</div>
+<h2>Q & A</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Question)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Answer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @if (item.MissionId == ViewBag.mission.MissionId)
+        {
+        <td>
+            @Html.DisplayFor(modelItem => item.Question)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Answer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissionId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.QuestionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.QuestionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.QuestionId })
+        </td>
+        }
+    </tr>
+}
+
+</table>
