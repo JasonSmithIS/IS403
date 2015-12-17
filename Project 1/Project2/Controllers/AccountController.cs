@@ -159,16 +159,7 @@ namespace Project2.Controllers
         {
             if (ModelState.IsValid)
             {
-                //creating my user
-                Users User = new Users();
-                User.UserId = model.Email;
-                User.UserFName = model.UserFName;
-                User.UserLName = model.UserLName;
-                //hardcoded image path.
-                User.UserImage = "~/Content/Images/dr-congo-missionaries-learning-class-1320689-tablet.jpg";
-                User.UserPassword = model.Password;
-                db.Users.Add(User);
-                db.SaveChanges();
+                
 
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };//I think that I need to add the other properties.
                 var result = await UserManager.CreateAsync(user, model.Password);
@@ -181,6 +172,17 @@ namespace Project2.Controllers
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+
+                    //creating my user
+                    Users User = new Users();
+                    User.UserId = model.Email;
+                    User.UserFName = model.UserFName;
+                    User.UserLName = model.UserLName;
+                    //hardcoded image path.
+                    User.UserImage = "~/Content/Images/dr-congo-missionaries-learning-class-1320689-tablet.jpg";
+                    User.UserPassword = model.Password;
+                    db.Users.Add(User);
+                    db.SaveChanges();
 
                     return RedirectToAction("Index", "Home");
                 }
@@ -362,12 +364,12 @@ namespace Project2.Controllers
                         //This will grab the users First Name from Google
                         var givenNameClaim = externalIdentity.Result.Claims.FirstOrDefault(c => c.Type == ClaimTypes.GivenName);
                         //This should grab the users account picture
-                        var pictureClaim = externalIdentity.Result.Claims.FirstOrDefault(c => c.Type.Equals("picture"));
+                        //var pictureClaim = externalIdentity.Result.Claims.FirstOrDefault(c => c.Type.Equals("picture"));
                         //This will save those values
                         var email = emailClaim.Value;
                         var firstName = givenNameClaim.Value;
                         var lastname = lastNameClaim.Value;
-                        var pictureUrl = pictureClaim.Value;
+                        //var pictureUrl = pictureClaim.Value;
 
                         //After you scaffold then you need to grab the --- value, and add it to this controller
                         // User user = new User();
@@ -376,7 +378,7 @@ namespace Project2.Controllers
                         User.UserPassword = "GooglePassword";
                         User.UserFName = firstName;
                         User.UserLName = lastname;
-                        User.UserImage = pictureUrl;
+                        //User.UserImage = pictureUrl;
                         db.Users.Add(User);
                         db.SaveChanges();
                     }

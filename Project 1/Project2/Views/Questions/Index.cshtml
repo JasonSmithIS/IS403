@@ -103,7 +103,7 @@
 <h2>Q & A</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="@Url.Action( "Create", "Questions", new { MissionId = ViewBag.mission.MissionId })" class="btn btn-success">Add A new question</a>
 </p>
 <table class="table">
     <tr>
@@ -139,9 +139,9 @@
             @Html.DisplayFor(modelItem => item.UserId)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.QuestionId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.QuestionId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.QuestionId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.QuestionId, missionid = ViewBag.mission.MissionId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.QuestionId, missionid = ViewBag.mission.MissionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.QuestionId, missionid = ViewBag.mission.MissionId })
         </td>
         }
     </tr>

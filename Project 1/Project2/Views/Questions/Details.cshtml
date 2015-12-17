@@ -45,6 +45,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.QuestionId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.QuestionId, missionid = Model.MissionId }) |
+    @Html.ActionLink("Back to List", "Index", new { missionid = Model.MissionId })
 </p>

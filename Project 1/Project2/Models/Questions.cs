@@ -27,7 +27,7 @@ namespace Project2.Models
 
         public int MissionId { get; set; }
 
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         //won't work until after users model has been created.
         //[ForeignKey("Username")]
         //public virtual int UserId { get; set; }
